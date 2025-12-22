@@ -1,0 +1,41 @@
+{
+  "name": "epub-to-pdf-cli",
+  "version": "1.0.5",
+  "description": "Convert EPUB files to PDF using Calibre (CLI tool)",
+  "type": "module",
+  "bin": {
+    "epub2pdf": "./bin/cli.js"
+  },
+  "main": "src/index.js",
+  "files": [
+    "bin",
+    "src",
+    "scripts",
+    "README.md"
+  ],
+  "keywords": [
+    "epub",
+    "pdf",
+    "converter",
+    "calibre",
+    "ebook",
+    "cli"
+  ],
+  "author": "Suraj Sutar",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/surajsutar7/epub-to-pdf-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/surajsutar7/epub-to-pdf-cli/issues"
+  },
+  "homepage": "https://github.com/surajsutar7/epub-to-pdf-cli#readme",
+  "scripts": {
+    "prepublishOnly": "node scripts/prepublish.js",
+    "test": "node test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
