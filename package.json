@@ -1,7 +1,7 @@
 {
   "name": "epub-to-pdf-cli",
   "version": "1.0.5",
-  "description": "Convert EPUB files to PDF using Calibre (CLI tool)",
+  "description": "CLI tool to convert EPUB to PDF using Calibre. Works with npx and global install.",
   "type": "module",
   "bin": {
     "epub2pdf": "./bin/cli.js"
@@ -15,11 +15,14 @@
   ],
   "keywords": [
     "epub",
-    "pdf",
-    "converter",
-    "calibre",
-    "ebook",
-    "cli"
+  "epub-to-pdf",
+  "pdf",
+  "ebook",
+  "ebook-converter",
+  "calibre",
+  "ebook-convert",
+  "cli",
+  "npx"
   ],
   "author": "Suraj Sutar",
   "license": "MIT",
