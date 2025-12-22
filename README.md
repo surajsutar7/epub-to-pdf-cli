@@ -1,4 +1,9 @@
-# 📘 epub-to-pdf-cli
+![npm](https://img.shields.io/npm/v/epub-to-pdf-cli)
+![npm](https://img.shields.io/npm/dt/epub-to-pdf-cli)
+![license](https://img.shields.io/npm/l/epub-to-pdf-cli)
+![node](https://img.shields.io/node/v/epub-to-pdf-cli)
+
+# 📘 EPUB to PDF CLI
 
 A simple and reliable **EPUB → PDF converter** using **Calibre**.  
 Works as both a **CLI tool** and a **Node.js library**.
