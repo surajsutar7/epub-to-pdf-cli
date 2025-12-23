@@ -3,3 +3,4 @@ npm-debug.log*
 *.tgz
 .env
 .DS_Store
+push.sh
