@@ -1,6 +1,6 @@
 {
   "name": "epub-to-pdf-cli",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "CLI tool to convert EPUB to PDF using Calibre. Works with npx and global install.",
   "type": "module",
   "bin": {
