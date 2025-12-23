@@ -36,9 +36,14 @@
   "homepage": "https://github.com/surajsutar7/epub-to-pdf-cli#readme",
   "scripts": {
     "prepublishOnly": "node scripts/prepublish.js",
-    "test": "node test.js"
+    "test": "node test.js",
+    "release": "standard-version",
+    "release:dry": "standard-version --dry-run"
   },
   "engines": {
     "node": ">=18"
+  },
+  "devDependencies": {
+    "standard-version": "^9.5.0"
   }
 }
