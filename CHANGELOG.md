@@ -1,0 +1,10 @@
+# Changelog
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## [1.1.0](https://github.com/surajsutar7/epub-to-pdf-cli/compare/v1.0.10...v1.1.0) (2025-12-23)
+
+
+### Features
+
+* add epub validation ([04332c4](https://github.com/surajsutar7/epub-to-pdf-cli/commit/04332c4b47d44b7eaae9407496ddae1c267374f9))
