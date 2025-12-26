@@ -3,11 +3,13 @@
 ![license](https://img.shields.io/npm/l/epub-to-pdf-cli)
 ![node](https://img.shields.io/node/v/epub-to-pdf-cli)
 
-# 📘 EPUB to PDF CLI – Convert EPUB files to PDF using Calibre.
+# # 📘 EPUB to PDF CLI – Node.js EPUB to PDF Converter using Calibre
 
-**epub-to-pdf-cli** is a lightweight **EPUB to PDF converter** built with **Node.js**, powered by **Calibre**.
 
-It allows developers and automation scripts to **convert EPUB ebook files into PDF format** using a simple **command-line interface (CLI)** or a **programmatic API**.
+**epub-to-pdf-cli** is a fast and reliable **Node.js command-line tool** to convert **EPUB files to PDF** using **Calibre**.
+
+It supports CLI usage, automation scripts, CI pipelines, and programmatic Node.js integration.
+
 
 This tool is ideal for:
 
