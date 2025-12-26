@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - main
-    tags:
-      - "v*"
 
 jobs:
   publish:
@@ -14,6 +12,8 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # IMPORTANT: required for tags
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -27,7 +27,24 @@ jobs:
       - name: Run tests
         run: npm test
 
+      # 🔍 Check if current version already exists as a git tag
+      - name: Check if version already published
+        id: version_check
+        run: |
+          VERSION=$(node -p "require('./package.json').version")
+          echo "Current version: $VERSION"
+
+          if git tag | grep -q "v$VERSION"; then
+            echo "publish=false" >> $GITHUB_OUTPUT
+            echo "ℹ️ Version v$VERSION already exists. Skipping publish."
+          else
+            echo "publish=true" >> $GITHUB_OUTPUT
+            echo "✅ New version detected. Will publish."
+          fi
+
+      # 🚀 Publish ONLY if version is new
       - name: Publish to npm
+        if: steps.version_check.outputs.publish == 'true'
         run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
