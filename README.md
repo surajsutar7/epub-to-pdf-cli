@@ -16,7 +16,6 @@
 
 It supports CLI usage, automation scripts, CI pipelines, and programmatic Node.js integration.
 
-
 This tool is ideal for:
 
 - Developers
