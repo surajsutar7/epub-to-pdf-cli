@@ -7,7 +7,7 @@ if (process.env.CI === 'true') {
 
 try {
   execSync('ebook-convert --version', { stdio: 'ignore' });
-  console.log('✅ Calibre found');
+  console.log('✅ Calibre found.');
 } catch {
   console.error(`
 ❌ Calibre is required but not installed.

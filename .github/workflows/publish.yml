@@ -2,57 +2,29 @@ name: Publish to npm
 
 on:
   push:
-    branches:
-      - main
+    tags:
+      - "v*"        # 👈 publish ONLY when a version tag is pushed
 
 jobs:
   publish:
     runs-on: ubuntu-latest
 
     steps:
-      # 1️⃣ Checkout repo with full history (needed for git tags)
       - name: Checkout repo
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
-      # 2️⃣ Setup Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
           registry-url: https://registry.npmjs.org/
 
-      # 3️⃣ Install dependencies
       - name: Install dependencies
         run: npm install
 
-      # 4️⃣ Run tests
       - name: Run tests
         run: npm test
 
-      # 5️⃣ Auto-bump version if current version tag exists (README or docs changes)
-      - name: Auto-bump patch version if needed
-        id: bump_version
-        run: |
-          VERSION=$(node -p "require('./package.json').version")
-          echo "Current version: $VERSION"
-
-          if git tag | grep -q "v$VERSION"; then
-            echo "Version exists, bumping patch..."
-            npm version patch -m "chore(release): bump patch version for docs/README changes"
-            NEW_VERSION=$(node -p "require('./package.json').version")
-            echo "Bumped to $NEW_VERSION"
-          else
-            echo "✅ Version is new, no bump needed"
-          fi
-
-      # 6️⃣ Push local commits & tags back to GitHub
-      - name: Push commits and tags
-        run: |
-          git push origin main --follow-tags
-
-      # 7️⃣ Publish to npm
       - name: Publish to npm
         run: npm publish --access public
         env:
