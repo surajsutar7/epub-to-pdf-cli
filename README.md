@@ -5,6 +5,10 @@
   ![npm](https://img.shields.io/npm/dt/epub-to-pdf-cli)
   ![license](https://img.shields.io/npm/l/epub-to-pdf-cli)
   ![node](https://img.shields.io/node/v/epub-to-pdf-cli)
+  ![Visitors](https://plausible.io/api/v1/stats/aggregate?site_id=surajsutar7.github.io&period=30d&metrics=visitors)
+  ![Analytics](https://img.shields.io/badge/analytics-plausible-green)
+
+
 </p>
 </h2>
 

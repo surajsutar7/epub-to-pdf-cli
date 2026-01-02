@@ -28,6 +28,14 @@
     window.plausible = window.plausible || function () { (plausible.q = plausible.q || []).push(arguments) }, plausible.init = plausible.init || function (i) { plausible.o = i || {} };
     plausible.init()
   </script>
+  <script>
+    document.addEventListener('click', function (event) {
+      const link = event.target.closest('a');
+      if (link && link.href && !link.href.includes(location.hostname)) {
+        plausible('Outbound Link', { props: { url: link.href } });
+      }
+    });
+  </script>
 
 
   <!-- Twitter -->
