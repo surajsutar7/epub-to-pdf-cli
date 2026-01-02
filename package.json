@@ -56,5 +56,8 @@
   },
   "devDependencies": {
     "standard-version": "^9.5.0"
+  },
+  "dependencies": {
+    "@plausible-analytics/tracker": "^0.4.4"
   }
 }
