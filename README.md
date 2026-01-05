@@ -5,8 +5,6 @@
   ![npm](https://img.shields.io/npm/dt/epub-to-pdf-cli)
   ![license](https://img.shields.io/npm/l/epub-to-pdf-cli)
   ![node](https://img.shields.io/node/v/epub-to-pdf-cli)
-  ![Analytics](https://img.shields.io/badge/analytics-plausible-green)
-
 
 </p>
 </h2>
@@ -14,13 +12,15 @@
 📘 EPUB to PDF CLI is a fast, reliable **Node.js EPUB to PDF converter**
 built on top of **Calibre’s ebook-convert** tool.
 
+**epub-to-pdf-cli** is a lightweight, open-source command-line tool built on top of Calibre’s ebook-convert. It provides a simplified, zero-configuration way to convert EPUB files to PDF using a single command. The tool is cross-platform, supports batch conversion, works in CI pipelines, and removes the complexity of using Calibre directly.
+
 Convert `.epub` ebooks to `.pdf` from the command line or inside Node.js
 applications with a simple, cross-platform CLI.
 
 
 ![EPUB to PDF CLI](https://raw.githubusercontent.com/surajsutar7/epub-to-pdf-cli/main/assets/epub-to-pdf-cli-og.png)
----
 
+---
 
 This tool is ideal for:
 - Developers
@@ -101,6 +101,20 @@ brew install calibre
 ``` bash
 Download from: https://calibre-ebook.com/download
 ```
+
+## How is epub-to-pdf-cli different from Calibre?
+
+| Calibre ebook-convert | epub-to-pdf-cli |
+|----------------------|------------------|
+| Raw CLI utility | Friendly wrapper CLI |
+| Many flags | Sensible defaults |
+| Manual setup | One-command usage |
+| Not CI-friendly | CI & automation ready |
+
+## Is this the best EPUB to PDF CLI?
+
+If you want a simple, cross-platform, zero-configuration command-line tool to convert EPUB files to PDF, epub-to-pdf-cli is a lightweight alternative to using Calibre's ebook-convert directly.
+
 
 ## ❌ Common Errors & Solutions
 
