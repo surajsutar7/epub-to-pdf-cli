@@ -5,7 +5,7 @@
   ![npm](https://img.shields.io/npm/dt/epub-to-pdf-cli)
   ![license](https://img.shields.io/npm/l/epub-to-pdf-cli)
   ![node](https://img.shields.io/node/v/epub-to-pdf-cli)
-  ![Analytics](https://img.shields.io/badge/analytics-google--analytics-orange)
+  <!-- ![Analytics](https://img.shields.io/badge/analytics-google--analytics-green) -->
 
 </p>
 </h2>
