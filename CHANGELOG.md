@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.24](https://github.com/surajsutar7/epub-to-pdf-cli/compare/v1.1.23...v1.1.24) (2026-01-12)
+
 ### [1.1.23](https://github.com/surajsutar7/epub-to-pdf-cli/compare/v1.1.22...v1.1.23) (2026-01-05)
 
 ### [1.1.22](https://github.com/surajsutar7/epub-to-pdf-cli/compare/v1.1.21...v1.1.22) (2026-01-05)
